@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practica3</title>
+    <style type="text/css">
+        p {
+            text-align: center;
+            font-family: monospace;
+            color: yellow;
+            font-size: 35px;
+        }
+        body {
+            background-color: black;
+        }
+        table {
+            width: 100vw;
+            height: 50vh;
+            table-layout: fixed;
+        }
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .rojo {
+            background-color: red;
+        }
+        .blue-div {
+            background-color: blue;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <p>BARCELONA</p>
+</header>
+<table class="rojo">
+    <tr>
+        <td>
+            <a href="img/lamine1.png" target="imageIframe">
+                <img src="img/lamine1.png" alt="lamine1">
+            </a>
+        </td>
+        <td>
+            <a href="img/pedri1.PNG" target="imageIframe">
+                <img src="img/pedri1.PNG" alt="pedri1">
+            </a>
+        </td>
+        <td>
+            <a href="img/lewan1.PNG" target="imageIframe">
+                <img src="img/lewan1.PNG" alt="lewan1">
+            </a>
+        </td>
+        <td>
+            <a href="img/rapi.jfif" target="imageIframe">
+                <img src="img/rapi.jfif" alt="rapi">
+            </a>
+        </td>
+    </tr>
+</table>
+<div class="blue-div">
+    <iframe name="imageIframe" width="250px" height="400px"></iframe>
+</div>
+</body>
+</html>
