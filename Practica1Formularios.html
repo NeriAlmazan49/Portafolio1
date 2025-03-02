@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formularios</title>
+	<style type="text/css">
+	table {
+			width: 60%;
+			margin: 20px auto;
+			border-collapse: collapse;
+		}
+
+		td {
+			width: 33%;
+			text-align: left;
+		}
+		header{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body bgcolor="skyblue">
+<header>
+<h1>Volkswagen Potosina</h1>
+<h2>Compras online</h2>
+</header>
+<form action="" method="post" enctype="text/plain"></form>
+<!--Agrupar controles de formulario-->
+<fieldset>
+	<legend>Información general del Cliente</legend>
+<table>
+	<tr>
+		<td><label for="nombre">Nombre:</label>
+			<br/>
+			<input type="text" name="nombre" id="nombre"
+			 placeholder="Nombre" size="25" maxlength="30" 
+			 title="Nombre" required />
+			 </td>
+		<td>
+			<label for="apellidos">Apellidos</label>
+			<br/>
+			<input type="text" name="apellidos" id="apellidos"
+			 placeholder="Apellidos" size="25" maxlength="30" 
+			 title="Apellidos" required />
+			 </td>
+		<td>
+			<label for="edad">Edad:</label>
+			<br/>
+			<input type="number" name="edad" id="edad" placeholder="0" required>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="nombreU">Nombre de ususario:</label>
+			<br/>
+			<input type="text" name="nombreU" id="nombreU" size="20" maxlength="20" title="Nombre de usuario"
+			placeholder="Nombre de usuario" required>
+		</td>
+	<td>
+		<label for="nombreU">Contraseña:</label>
+		<br/>
+			<input type="text" name="contraseña" id="contraseña" size="12" maxlength="12" title="contraseña"
+			placeholder="Contraseña" required></td>
+			<td>
+				<label for="fecha">Fecha de registro:</label>
+				<br/>
+				<input type="date" name="fecha" id="fecha" title="Fecha" required="">
+			</td>
+	</tr>
+</table>
+</fieldset>
+	<fieldset>
+		<legend>Datos para facturar</legend>
+	<table>
+		<tr>
+			<td><label for="pais">País</label>
+				<br/>
+				<select name="pais" id="pais" size="3">
+				<option value="MX">México</option>
+				<option value="CA">Canadá</option>
+				<option value="UK">Reino Unido</option>
+			</select>
+			</td>
+			<td><label for="pais">Cuidad</label>
+				<br/>
+				<select name="cuidad" id="cuidad" size="3">
+				<option value="SLP">San Luis Potosí</option>
+				<option value="Mo">Monterrey</option>
+				<option value="CV">C.d Valles</option>
+			</select>
+		</td>
+			<td>
+				<label for="calle">Calle</label>
+				<br/>
+			<input type="text" name="calle" id="calle" size="25" maxlength="30" title="Calle"
+			placeholder="Calle" required></td>
+		</tr>
+		<tr>
+			<td>
+				<label for="numero">Numero de casa</label>
+				<br/>
+			<input type="text" name="numero" id="numero" size="25" maxlength="30" title="Numero de casa"
+			placeholder="Numero de casa" required>
+			</td>
+			<td>
+				<label for="colonia">Colonia</label>
+				<br/>
+			<input type="text" name="colonia" id="colonia" size="25" maxlength="30" title="Colonia"
+			placeholder="Calle" required>
+			</td>
+			<td>
+				<label for="correo">E-mail</label>
+				<br/>
+			<input type="email" name="correo" id="correo" size="25" maxlength="30" title="Correo"
+			placeholder="Correo" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="rfc">R.F.C</label>
+				<br/>
+			<input type="text" name="rfc" id="rfc" size="25" maxlength="30" title="RFC"
+			placeholder="R.F.C" required>
+			</td>
+			<td>
+				<label for="cp">C.P</label>
+				<br/>
+			<input type="text" name="cp" id="cp" size="15" maxlength="10" title="CP"
+			placeholder="CodigoPostal" required>
+			</td>
+			<td>
+				<label>
+					<input type="checkbox" name="aceptar" id="aceptar">Acepto los términos y condiciones
+				</label>
+				<br/>
+				<input  type="submit" name="boton" id="boton" value="Enviar">
+				<input type="reset" name="restablecer" id="restablecer" value="Restablecer todo">
+			</td>
+		</tr>
+	</table>
+</datalist>
+</fieldset>
+</body>
+</html>
