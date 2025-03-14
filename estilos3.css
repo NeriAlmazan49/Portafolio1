@@ -1,0 +1,65 @@
+.capa1{
+	margin-left: 25%;
+	padding: 12px;
+}
+
+
+ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 20%;
+	height: 100%;
+	background-color: #03c188;
+	position: fixed;
+}
+li a{
+	background-color: #03c188;
+	color: red;
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+
+}
+
+li a:hover{
+	background-color: blueviolet;
+}
+
+li .activo{
+	background-color: #008c62;
+
+}
+h1{
+	font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h2{
+	font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+	font-family: "fuente1";
+	src: url("Playwrite_HU/PlaywriteHU-VariableFont_wght.ttf")
+	format("truetype");
+}
+p{
+	font-family: "fuente1";
+	font-size: 12px;
+	text-align: justify;
+}
+@font-face{
+	font-family: "fuente2";
+	src: url("Amatic_SC,Emblema_One,Playwrite_HU,Shadows_Into_Light/Amatic_SC/AmaticSC-Bold.ttf")
+	format("truetype");
+}
+.t2{
+	font-family: "fuente2";
+	font-size: 12px;
+	text-align: justify;
+}
