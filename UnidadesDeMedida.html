@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida en CSS</title>
+    <link rel="stylesheet" href="UnidadesDeMedidaCss.css">
+</head>
+<body>
+
+    <h1>Unidades Absolutas en CSS</h1>
+    <div class="contenedor-absoluto">
+        <h2>Ejemplos de Unidades Absolutas</h2>
+        <div class="elemento-px">150px x 50px (píxeles)</div>
+        <div class="elemento-cm">5cm x 1cm (centímetros)</div>
+        <div class="elemento-mm">50mm x 10mm (milímetros)</div>
+        <div class="elemento-in">1.5in x 0.5in (pulgadas)</div>
+        <div class="elemento-pt">108pt x 36pt (puntos)</div>
+        <div class="elemento-pc">9pc x 3pc (picas)</div>
+        <p class="observacion">Observa que el tamaño de estos elementos es fijo, independientemente del tamaño de la ventana o de sus contenedores.</p>
+    </div>
+
+    <h1>Unidades Relativas en CSS</h1>
+    <div class="contenedor-relativo">
+        <h2>Ejemplos de Unidades Relativas</h2>
+        <div class="elemento-porcentaje">50% de ancho (porcentaje)</div>
+        <p>Este elemento tiene un ancho del 50% de su contenedor.</p>
+    </div>
+
+    <div class="padre-em">
+        <h2>Ejemplo de Unidad em</h2>
+        <p style="font-size: 1em;">Texto con tamaño de fuente base (1em).</p>
+        <div class="elemento-em">Texto con tamaño de fuente 1.5em (relativo al padre).</div>
+    </div>
+
+    <div>
+        <h2>Ejemplo de Unidad rem</h2>
+        <p style="font-size: 1rem;">Texto con tamaño de fuente base rem (relativo al root).</p>
+        <div class="elemento-rem">Texto con tamaño de fuente 1.2rem (relativo al root).</div>
+    </div>
+
+    <div class="contenedor-viewport">
+        <h2>Ejemplos de Unidades vw y vh</h2>
+        <div class="elemento-vw">Ancho: 80vw, Alto: 5vh (viewport width y height)</div>
+        <div class="elemento-vh">Ancho: 30vw, Alto: 10vh (viewport width y height)</div>
+        <p>El tamaño de estos elementos es relativo al ancho y alto de la ventana del navegador.</p>
+    </div>
+
+</body>
+</html>

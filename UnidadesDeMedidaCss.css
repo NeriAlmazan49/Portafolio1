@@ -1,0 +1,137 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.contenedor-absoluto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.elemento-px, .elemento-cm, .elemento-mm, .elemento-in, .elemento-pt, .elemento-pc {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.elemento-px {
+    background-color: lightblue;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.elemento-cm {
+    background-color: lightgreen;
+    height: 1cm;
+    line-height: 1cm;
+    font-size: 12pt;
+}
+
+.elemento-mm {
+    background-color: lightcoral;
+    height: 10mm;
+    line-height: 10mm;
+    font-size: 9pt;
+}
+
+.elemento-in {
+    background-color: lightsalmon;
+    height: 0.5in;
+    line-height: 0.5in;
+    font-size: 14pt;
+}
+
+.elemento-pt {
+    background-color: lightseagreen;
+    height: 36pt;
+    line-height: 36pt;
+    font-size: 12pt;
+}
+
+.elemento-pc {
+    background-color: lightgoldenrodyellow;
+    height: 3pc;
+    line-height: 3pc;
+    font-size: 10pt;
+}
+
+.observacion {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    grid-column: span 2; /* Asegura que el texto ocupe dos columnas */
+}
+
+.contenedor-relativo {
+    border: 1px solid #666;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.elemento-porcentaje {
+    width: 50%;
+    height: 30px;
+    background-color: plum;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.padre-em {
+    font-size: 16px;
+    border: 1px solid orange;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.elemento-em {
+    font-size: 1.5em;
+    background-color: orchid;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+html {
+    font-size: 14px;
+}
+
+.elemento-rem {
+    font-size: 1.2rem;
+    background-color: darkcyan;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.contenedor-viewport {
+    border: 1px solid navy;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.elemento-vw {
+    width: 80vw;
+    height: 5vh;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    margin-bottom: 5px;
+}
+
+.elemento-vh {
+    width: 30vw;
+    height: 10vh;
+    background-color: darkslateblue;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+}
