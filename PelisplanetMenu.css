@@ -1,5 +1,5 @@
-body{
-	background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
+body {
+    background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
     height: 100vh;
     margin: 0;
     font-family: monospace;
@@ -7,6 +7,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 .encabezado {
     width: 100%;
     background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
@@ -58,7 +59,6 @@ body{
     color: #279494;
 }
 
-
 .contenido {
     width: 90%;
     max-width: 1200px;
@@ -98,6 +98,30 @@ body{
     transform: scale(1.1);
 }
 
+/* Estilos para el mapa */
+.contenedor-mapa {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+.contenedor-mapa h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.mapa {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #1b7737;
+}
+
 .pie-de-pagina {
     margin-top: auto;
     background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
@@ -132,5 +156,10 @@ body{
         width: 150px;
         height: 225px;
         margin-right: 10px;
+    }
+    
+    .contenedor-mapa {
+        width: 95%;
+        margin: 20px auto;
     }
 }
