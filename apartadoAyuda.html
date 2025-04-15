@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="inicio/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="apartadoAyudaCss.css">
+    <title>PelisPlanet - Ayuda</title>
+</head>
+<body>
+<header class="encabezado">
+    <div class="menu">
+        <h1 class="titulo">PelisPlanet Ayuda</h1>
+        <img src="inicio/PelisPlanetlogo.png" class="logo">
+        <nav class="menu-navegacion">
+            <ul class="lista-enlaces">
+                <li><a href="PelisPlanet.html">INICIO</a></li>
+                <li><a href="iniciopag (1).html">PELICULAS</a></li>
+                <li><a href="">SERIES</a></li>
+                <li><a href="apartadoPaquetes.html">PAQUETES</a></li>
+                <li><a href="apartadoAyudaCss.html">AYUDA</a></li>
+                <li><a href="">CUESTIONARIO</a></li>
+                <li><a href="">CHAT BOX</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="contenedor-ayuda">
+    <h2 class="titulo-ayuda">Centro de Ayuda</h2>
+    
+    <section class="seccion-faq">
+        <h3>Preguntas Frecuentes</h3>
+        <div class="faq-item">
+            <h4 class="faq-pregunta">¿Cómo puedo suscribirme a PelisPlanet?</h4>
+            <div class="faq-respuesta">
+                <p>Puedes suscribirte desde nuestra página de Paquetes, seleccionando el plan que mejor se adapte a tus necesidades y completando el proceso de pago.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h4 class="faq-pregunta">¿Qué métodos de pago aceptan?</h4>
+            <div class="faq-respuesta">
+                <p>Aceptamos tarjetas de crédito/débito (Visa, MasterCard, American Express), PayPal y transferencias bancarias.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h4 class="faq-pregunta">¿Puedo cancelar mi suscripción en cualquier momento?</h4>
+            <div class="faq-respuesta">
+                <p>Sí, puedes cancelar tu suscripción en cualquier momento desde la sección de Configuración de tu cuenta.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h4 class="faq-pregunta">¿Cómo cambio mi contraseña?</h4>
+            <div class="faq-respuesta">
+                <p>Puedes cambiar tu contraseña en la sección de Seguridad de tu perfil. Necesitarás ingresar tu contraseña actual antes de establecer una nueva.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="seccion-contacto">
+        <h3>Contacta con Soporte</h3>
+        <form class="formulario-contacto" action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="tecnico">Problema técnico</option>
+                    <option value="facturacion">Facturación</option>
+                    <option value="cuenta">Problema con mi cuenta</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </section>
+    
+    <section class="seccion-redes">
+        <h3>Síguenos en Redes Sociales</h3>
+        <div class="redes-sociales">
+            <a href="#" class="red-social">Facebook</a>
+            <a href="#" class="red-social">Twitter</a>
+            <a href="#" class="red-social">Instagram</a>
+            <a href="#" class="red-social">YouTube</a>
+        </div>
+    </section>
+</main>
+
+<footer class="pie-de-pagina">
+        <p>Página web desarrollada para la materia de Programación Web I.<br>Primavera 2025. Universidad Politécnica San Luis Potosí</p>
+    </footer>
+</body>
+</html>

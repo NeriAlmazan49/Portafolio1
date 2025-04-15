@@ -1,0 +1,222 @@
+body {
+    background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
+    min-height: 100vh;
+    margin: 0;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado {
+    width: 100%;
+    background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
+    border: 3px solid #1b7737;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.titulo {
+    font-size: 28px;
+    color: white;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 30px;
+    margin-right: 60px;
+}
+
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-navegacion li {
+    margin-left: 20px;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-navegacion a:hover {
+    color: #279494;
+}
+
+.contenedor-ayuda {
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    color: white;
+    flex: 1;
+}
+
+.titulo-ayuda {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.seccion-faq, .seccion-contacto, .seccion-redes {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-faq h3, .seccion-contacto h3, .seccion-redes h3 {
+    color: #1b7737;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.faq-pregunta {
+    color: #1b7737;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.faq-respuesta {
+    color: #555;
+    line-height: 1.6;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #1b7737;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    background-color: #1b7737;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.btn-enviar:hover {
+    background-color: #279494;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.red-social {
+    color: #1b7737;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.red-social:hover {
+    color: #279494;
+}
+
+.pie-de-pagina {
+    margin-top: auto;
+    background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
+    border: 3px solid #1b7737;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.pie-de-pagina a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.pie-de-pagina a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-navegacion ul {
+        flex-direction: column;
+    }
+
+    .menu-navegacion li {
+        margin: 5px 0;
+    }
+    
+    .contenedor-ayuda {
+        padding: 20px 10px;
+    }
+    
+    .seccion-faq, .seccion-contacto, .seccion-redes {
+        padding: 20px;
+    }
+    
+    .redes-sociales {
+        flex-direction: column;
+        align-items: center;
+    }
+}
