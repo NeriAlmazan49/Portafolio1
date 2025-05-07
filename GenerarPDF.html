@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generar PDF</title>
+<script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jspdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="jspdf/jspdf.js"></script>
+<script type="text/javascript" src="jspdf/jspdf.plugin.addimage.js"></script>
+<script type="text/javascript" src="jspdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+<script type="text/javascript" src="jspdf/jspdf.plugin.split_text_to_size.js"></script>
+<script type="text/javascript" src="jspdf/jspdf.plugin.from_html.js"></script>
+</head>
+<body>
+<head>
+<input type="button" name="boton" onclick="generar()" value="Generar PDF">
+<iframe src="" name="contenedor" width="700" height="900"></iframe>
+<script type="text/javascript">
+function generar(){
+var doc = new jsPDF();
+doc.setFontSize(36);
+doc.setTextColor(100,150,0);
+doc.text(30, 30,"Hola mundo");
+doc.setFontSize(32);
+doc.setTextColor(150,100,0);
+doc.text(30,50, "Bienvenidos a JavaScript");
+var string = doc.output("datauristring");
+$('iframe').attr('src', string);
+}
+</script>
+</head>
+</body>
+</html>
