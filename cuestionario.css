@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f9f5; /* Verde claro de fondo */
+    color: #2d3748;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #2e8b57; /* Verde oscuro */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(46, 139, 87, 0.1);
+}
+
+/* Contenedor del formulario */
+#formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(56, 161, 105, 0.1);
+    border: 1px solid #c6f6d5; /* Borde verde claro */
+}
+
+/* Campos del formulario */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2e8b57; /* Verde oscuro */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #c6f6d5; /* Verde claro */
+    border-radius: 8px;
+    background-color: #f7faf7; /* Fondo verde muy claro */
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #38a169; /* Verde medio */
+    box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.2);
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    accent-color: #38a169; /* Verde medio */
+    margin-right: 8px;
+}
+
+/* Botones */
+button {
+    background-color: #38a169; /* Verde medio */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: calc(33.33% - 10px);
+}
+
+button:hover {
+    background-color: #2e8b57; /* Verde oscuro */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46, 139, 87, 0.2);
+}
+
+#btnCancelar {
+    background-color: #e53e3e; /* Rojo */
+}
+
+#btnCancelar:hover {
+    background-color: #c53030;
+}
+
+/* Área de resultados */
+#resultado {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ebf8f2; /* Verde claro */
+    border-radius: 8px;
+    border-left: 4px solid #38a169;
+    color: #2d3748;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

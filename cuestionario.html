@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario de pago - Pelis Planet</title>
+  <link rel="stylesheet" href="cuestionario.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="custionario.js" defer></script>
+</head>
+<body>
+  <h2>Cuestionario de pago - Pelis Planet</h2>
+  <form id="formulario">
+    <!-- Campos del formulario (se mantienen igual) -->
+    <label>Username</label>
+    <input type="text" id="username" required>
+
+    <label>Password</label>
+    <input type="password" id="password" required>
+    <small>Contraseña tiene que cumplir las normas</small>
+
+    <label>Ingrese su edad</label>
+    <input type="number" id="edad" required>
+
+    <label>Ingrese su género</label><br>
+    <input type="radio" name="genero" value="Hombre"> Hombre
+    <input type="radio" name="genero" value="Mujer"> Mujer
+    <input type="radio" name="genero" value="Otro"> Otro<br><br>
+
+    <label>Seleccione método de pago</label>
+    <select id="metodoPago">
+      <option value="Tarjeta">Tarjeta</option>
+      <option value="PayPal">PayPal</option>
+      <option value="Cripto">Criptomonedas</option>
+    </select><br>
+
+    <label>Seleccione el paquete</label>
+    <select id="paquete">
+      <option value="Paquete 1">Paquete 1 - $100</option>
+      <option value="Paquete 2">Paquete 2 - $150</option>
+      <option value="Paquete 3">Paquete 3 - $200</option>
+    </select><br>
+
+    <!-- Botones con funciones separadas -->
+    <button type="button" id="btnValidar">Validar datos</button>
+    <button type="button" id="btnDescargar">Descargar PDF</button>
+    <button type="button" id="btnComprar">Confirmar compra</button>
+    <button type="button" id="btnCancelar">Cancelar</button>
+  </form>
+
+  <div id="resultado"></div>
+
+</body>
+</html>
