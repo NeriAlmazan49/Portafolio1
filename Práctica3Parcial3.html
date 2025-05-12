@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cuánto sabes del FC Barcelona?</title>
+    <link rel="stylesheet" href="Formulariofcb.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Cuánto sabes del FC Barcelona?</h1>
+        <p>Responde estas 10 preguntas para evaluar tu conocimiento sobre el club culé</p>
+        
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. ¿En qué año fue fundado el FC Barcelona?</h3>
+                <input type="radio" name="q1" value="1" id="q1a"> <label for="q1a">1899</label><br>
+                <input type="radio" name="q1" value="0" id="q1b"> <label for="q1b">1902</label><br>
+                <input type="radio" name="q1" value="0" id="q1c"> <label for="q1c">1910</label>
+            </div>
+            
+            <div class="question">
+                <h3>2. ¿Quién es el máximo goleador histórico del club?</h3>
+                <input type="radio" name="q2" value="0" id="q2a"> <label for="q2a">Luis Suarez</label><br>
+                <input type="radio" name="q2" value="1" id="q2b"> <label for="q2b">Lionel Messi</label><br>
+                <input type="radio" name="q2" value="0" id="q2c"> <label for="q2c">César Rodríguez</label>
+            </div>
+            
+            <div class="question">
+                <h3>3. ¿Qué jugador tiene más partidos disputados con el Barça?</h3>
+                <input type="radio" name="q3" value="0" id="q3a"> <label for="q3a">Carles Puyol</label><br>
+                <input type="radio" name="q3" value="0" id="q3b"> <label for="q3b">Xavi Hernández</label><br>
+                <input type="radio" name="q3" value="1" id="q3c"> <label for="q3c">Lionel Messi</label>
+            </div>
+            
+            <div class="question">
+                <h3>4. ¿Cuántas Champions League ha ganado el Barcelona?</h3>
+                <input type="radio" name="q4" value="0" id="q4a"> <label for="q4a">3</label><br>
+                <input type="radio" name="q4" value="1" id="q4b"> <label for="q4b">5</label><br>
+                <input type="radio" name="q4" value="0" id="q4c"> <label for="q4c">7</label>
+            </div>
+            
+            <div class="question">
+                <h3>5. ¿Qué entrenador introdujo el "Dream Team" en los 90?</h3>
+                <input type="radio" name="q5" value="0" id="q5a"> <label for="q5a">Louis van Gaal</label><br>
+                <input type="radio" name="q5" value="1" id="q5b"> <label for="q5b">Johan Cruyff</label><br>
+                <input type="radio" name="q5" value="0" id="q5c"> <label for="q5c">Pep Guardiola</label>
+            </div>
+            
+            <div class="question">
+                <h3>6. ¿En qué estadio juega como local el Barcelona?</h3>
+                <input type="radio" name="q6" value="0" id="q6a"> <label for="q6a">Santiago Bernabéu</label><br>
+                <input type="radio" name="q6" value="1" id="q6b"> <label for="q6b">Camp Nou</label><br>
+                <input type="radio" name="q6" value="0" id="q6c"> <label for="q6c">RCDE Stadium</label>
+            </div>
+            
+            <div class="question">
+                <h3>7. ¿Qué jugador del Barcelona ganó el Balón de Oro en 1999?</h3>
+                <input type="radio" name="q7" value="1" id="q7a"> <label for="q7a">Rivaldo</label><br>
+                <input type="radio" name="q7" value="0" id="q7b"> <label for="q7b">Ronaldinho</label><br>
+                <input type="radio" name="q7" value="0" id="q7c"> <label for="q7c">Romário</label>
+            </div>
+            
+            <div class="question">
+                <h3>8. ¿Cuál es el lema del club?</h3>
+                <input type="radio" name="q8" value="0" id="q8a"> <label for="q8a">Hasta el final</label><br>
+                <input type="radio" name="q8" value="0" id="q8b"> <label for="q8b">Más que un equipo</label><br>
+                <input type="radio" name="q8" value="1" id="q8c"> <label for="q8c">Més que un club</label>
+            </div>
+            
+            <div class="question">
+                <h3>9. ¿En qué año debutó Lionel Messi con el primer equipo?</h3>
+                <input type="radio" name="q9" value="0" id="q9a"> <label for="q9a">2002</label><br>
+                <input type="radio" name="q9" value="1" id="q9b"> <label for="q9b">2004</label><br>
+                <input type="radio" name="q9" value="0" id="q9c"> <label for="q9c">2005</label>
+            </div>
+            
+            <div class="question">
+                <h3>10. ¿Qué jugador era conocido como "El Pulga"?</h3>
+                <input type="radio" name="q10" value="1" id="q10a"> <label for="q10a">Lionel Messi</label><br>
+                <input type="radio" name="q10" value="0" id="q10b"> <label for="q10b">Andrés Iniesta</label><br>
+                <input type="radio" name="q10" value="0" id="q10c"> <label for="q10c">Gerard Piqué</label>
+            </div>
+            
+            <button type="button" id="submitBtn">Calificar</button>
+        </form>
+        
+        <div id="results" class="hidden">
+            <h2>Tu resultado</h2>
+            <p id="scoreText"></p>
+            <div class="chart-container">
+                <canvas id="resultsChart"></canvas>
+            </div>
+            <button id="generatePdf" class="pdf-btn">Generar PDF</button>
+        </div>
+    </div>
+    
+    <script src="Formulariofcb.js"></script>
+</body>
+</html>
