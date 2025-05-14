@@ -1,0 +1,165 @@
+body {
+    background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
+    height: 100vh;
+    margin: 0;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado {
+    width: 100%;
+    background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
+    border: 3px solid #1b7737;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.titulo {
+    font-size: 28px;
+    color: white;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 30px;
+    margin-right: 60px;
+}
+
+/* Menú de navegación */
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-navegacion li {
+    margin-left: 20px;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-navegacion a:hover {
+    color: #279494;
+}
+
+.contenido {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.contenedor-carrusel {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.contenedor-carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+.contenedor-carrusel img {
+    width: 200px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    scroll-snap-align: start;
+    padding-right: 30px;
+}
+
+.contenedor-carrusel img:last-child {
+    margin-right: 0;
+}
+
+.contenedor-carrusel img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el mapa */
+.contenedor-mapa {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+.contenedor-mapa h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.mapa {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #1b7737;
+}
+
+.pie-de-pagina {
+    margin-top: auto;
+    background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
+    border: 3px solid #1b7737;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilos para móviles */
+@media (max-width: 500px) {
+    .contenedor-principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-principal {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-navegacion ul {
+        flex-direction: column;
+    }
+
+    .menu-navegacion li {
+        margin: 5px 0;
+    }
+
+    .contenedor-carrusel img {
+        width: 150px;
+        height: 225px;
+        margin-right: 10px;
+    }
+    
+    .contenedor-mapa {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
