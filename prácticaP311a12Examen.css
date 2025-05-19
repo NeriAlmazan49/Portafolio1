@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #00fc58;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#tarea-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff0000;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #00fc58;
+}
+
+#tarea-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.tarea-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.tarea-item button {
+  background-color: #dc3545;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+.tarea-item button:hover {
+  background-color: #c82333;
+}
+
+#pie-depagina {
+  background: #01e912;
+  border: 3px solid #1b7737;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+}
