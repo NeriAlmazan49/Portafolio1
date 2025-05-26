@@ -1,0 +1,172 @@
+body {
+    background: radial-gradient(circle, #24f544, #80d3aa);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .encabezado {
+    width: 100%;
+    background: radial-gradient(circle, #7fffa0, #37da65, #1b7737);
+    border: 3px solid #1b7737;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.titulo {
+    font-size: 28px;
+    color: white;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 30px;
+    margin-right: 60px;
+}
+
+/* Menú de navegación */
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-navegacion li {
+    margin-left: 20px;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-navegacion a:hover {
+    color: #279494;
+}
+  .titulo h1 {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .titulo p {
+    margin: 5px 0 0;
+  }
+  
+  section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+  }
+  
+  .pregunta h3 {
+    color: #ffeb3b;
+  }
+  
+  .pregunta p {
+    margin-left: 20px;
+    color: #f0f0f0;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  ul li a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  ul li a:hover {
+    color: #ffd700;
+  }
+  
+  .iconos a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .icono-red {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 4px;
+  }
+  
+  .iconos a:hover {
+    color: #222;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 500px) {
+    .contenedor-principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-principal {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-navegacion ul {
+        flex-direction: column;
+    }
+
+    .menu-navegacion li {
+        margin: 5px 0;
+    }
+}
+
+  
