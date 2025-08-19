@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a67c52;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+.navbar img {
+    height: 60px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffd700;
+  }
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #8b5e3c;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenido-zapato {
+    padding: 40px 20px;
+    background-color: #a67c52;
+    color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenido-zapato h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+}
+
+.grid-zapato {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.bloque {
+    background-color: #8b5e3c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.bloque h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.bloque ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.bloque li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Sección de medidas del pie */
+.medidas-pie {
+    background-color: #fdfaf6;
+    padding: 32px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #3e3e3e;
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+}
+
+.medidas-pie h2 {
+    font-size: 32px;
+    color: #8b4513;
+    margin-bottom: 20px;
+}
+
+.medidas-pie h3 {
+    font-size: 22px;
+    color: #a0522d;
+    margin-top: 24px;
+}
+
+.medidas-pie ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.medidas-pie ul li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.medidas-pie ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #d2691e;
+}
+
+/* Sección El Buen Zapato */
+.buen-zapato {
+    background-color: #fff8f0;
+    padding: 32px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #3e3e3e;
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+}
+
+.buen-zapato h2 {
+    font-size: 28px;
+    color: #6b3e26;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d2a679;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.buen-zapato p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.horma {
+  background-color: #fdf6f0;
+  border-left: 5px solid #a0522d;
+  padding: 1.5em;
+  margin: 2em 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #3e2a1c;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.horma h3 {
+  color: #5a2e0c;
+  margin-top: 0;
+  font-size: 1.4em;
+}
+
+.horma ul {
+  padding-left: 1.2em;
+  margin-top: 0.5em;
+}
+
+.horma li {
+  margin-bottom: 0.5em;
+}
+
+.resumen-numeracion {
+  background-color: #f3f0eb;
+  border-left: 5px solid #6b4c2e;
+  padding: 1.5em;
+  margin: 2em 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #3a2a1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.numeracion h3 {
+  color: #5a2e0c;
+  margin-top: 0;
+  font-size: 1.4em;
+}
+
+.numeracion ul {
+  padding-left: 1.2em;
+  margin-top: 0.5em;
+}
+
+.numeracion li {
+  margin-bottom: 0.5em;
+}
+
+.img-numeracion {
+  display: block;
+  margin: 1.5em auto 0 auto;
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.proceso-zapato-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.paso {
+  background-color: #fdf6f0;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.paso p {
+  font-size: 16px;
+  color: #3e2a1c;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cuidado-calzado {
+  background-color: #fdfdfd;
+  padding: 40px 20px;
+  border-top: 2px solid #ccc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cuidado-calzado h2 {
+  font-size: 28px;
+  color: #5a3e2b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.calzado-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.calzado-img img {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calzado-texto {
+  max-width: 500px;
+  color: #333;
+}
+
+.calzado-texto h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #7a4f2c;
+}
+
+.calzado-texto ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.calzado-texto ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    border-top: 2px solid #ffd700;
+    margin-top: 150px;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
